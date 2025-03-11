@@ -1,0 +1,8 @@
+<main>
+  <h1>
+    <%= @category.name %>
+    <% @category.nominees.each do |nominee|%>
+      <li><%= link_to nominee.name, nominee_path(nominee.id) %></li>
+    <%end%>
+  </h1>
+</main>

@@ -1,0 +1,10 @@
+<main>
+  <h2>
+    nominees
+  </h2>
+  <ul>
+    <% @nominees.each do |nominee|%>
+      <li><%= link_to nominee.name, nominee_path(nominee.id) %></li>
+    <%end%>
+  </ul>
+</main>
